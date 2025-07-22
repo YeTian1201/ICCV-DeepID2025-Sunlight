@@ -10,6 +10,7 @@ Both Tracks’ 1st Place Solution for [**The Challenge of Detecting Synthetic Ma
 
 - [Overview](#Overview)
   - [Motivation](#Motivation)
+  - [Organizers](#Organizers)
   - [Competition Details](#competition-details)
 - [Dataset](#dataset)
   - [TrainSets](#TrainSets)
