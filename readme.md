@@ -4,15 +4,15 @@
   <img src='imgs/title.jpg' />
 </p>
 
-1st place solution for [**The Challenge of Detecting Synthetic Manipulations in ID Documents (Classification Track & Localization Track)**](https://deepid-iccv.github.io/) by **"Sunlight" team**.
+1st place solution for [**The Challenge of Detecting Synthetic Manipulations in ID Documents (Classification Track & Localization Track)**](https://deepid-iccv.github.io/) by **"Sunlight"** team.
 
 ## Table of Contents
 
 - [Overview](#Overview)
   - [Motivation](#Motivation)
-  - [Tracks](#Tracks)
+  - [CompetitionDetails](#CompetitionDetails)
 - [Dataset](#dataset)
-  - [Trainsets](#TrainSets)
+  - [TrainSets](#TrainSets)
   - [TestSets](#TestSets)
   - [Examples](#Examples)
 - [Training](#training)
@@ -30,7 +30,7 @@ With the advancements and wide spread of **visual generative models**, ID docume
 
 ---
 
-### Tracks
+### CompetitionDetails
 
 #### 🔹 Track 1: Binary Classification (Real vs. Forged)
 
