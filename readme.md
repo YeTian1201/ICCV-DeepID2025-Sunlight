@@ -1,9 +1,26 @@
-# 🆔 DeepID: Digital Manipulation Detection in ID Documents
+# DeepID: Digital Manipulation Detection in ID Documents
 
-## 1️⃣ Overview & Motivation
+<p align='center'>  
+  <img src='imgs/title.jpg' />
+</p>
+1st place solution for [The Challenge of Detecting Synthetic Manipulations in ID Documents( Classification Track & Localization Track )](https://deepid-iccv.github.io/) by "Sunlight" team.
 
+## Table of Contents
+
+- [Overview](#Overview)
+  - [Motivation](#Motivation)
+  - [Tracks](#Tracks)
+- [Dataset](#dataset)
+  - [Trainsets](#TrainSets)
+  - [TestSets](#TestSets)
+  - [Examples](#Examples)
+- [Training](#training)
+- [Acknowledgement](#acknowledgement)
+  
+## Overview 
+### Motivation
 With the advancements and wide spread of **visual generative models**, ID document tampering has become a pressing issue. **DeepID** is **the first competition** that challenges participants to detect synthetic manipulations (i.e., injection attacks (not presentation attacks)) in **ID documents**. 
-### The core objectives are:
+#### The core objectives are:
 
 - ✅ **Detecting face-swapping manipulations** when it was replaced using face swapping method in an ID document (card or passport).  
 - ✅ **Detecting full or partial text inpainted** inside a textual fields of an ID documents, such as, names and dates, using diffusion-based or other generative techniques.
@@ -12,9 +29,9 @@ With the advancements and wide spread of **visual generative models**, ID docume
 
 ---
 
-## 2️⃣ Competition Tracks
+### Tracks
 
-### 🔹 Track 1: Binary Classification (Real vs. Forged)
+#### 🔹 Track 1: Binary Classification (Real vs. Forged)
 
 - **Input**: A single ID card image  
 - **Output**: A score between 0 and 1  
@@ -25,7 +42,7 @@ With the advancements and wide spread of **visual generative models**, ID docume
 
 ---
 
-### 🔹 Track 2: Manipulation Localization (Binary Mask Prediction)
+#### 🔹 Track 2: Manipulation Localization (Binary Mask Prediction)
 
 - **Input**: A single ID image  
 - **Output**: A binary mask with the same dimensions as the input  
@@ -51,9 +68,9 @@ With the advancements and wide spread of **visual generative models**, ID docume
 
 ---
 
-## 3️⃣ Dataset Overview
+## Dataset
 
-### 🧾 Fantasy ID Dataset (for training/tuning)
+### TrainSets
 
 - **262 fantasy ID templates**, designed to mimic real ID documents of 10 countries  
 - **786 bona fide images** captured using:
@@ -69,15 +86,15 @@ With the advancements and wide spread of **visual generative models**, ID docume
 
 ---
 
-## 4️⃣ Test Sets
+### TestSets
 
-### 🔸 In-domain Test Set
+#### 🔸 In-domain Test Set
 
 - Based on **new Fantasy ID cards**  
 - Includes **novel manipulation techniques** not present in training  
 - Evaluation leaderboard updated **daily**
 
-### 🔸 Private Out-of-domain Test Set (Hidden)
+#### 🔸 Private Out-of-domain Test Set (Hidden)
 
 - Provided by **PXL Vision** using **real ID documents** and corresponding forgeries  
 - **Not publicly released**  
@@ -87,94 +104,94 @@ With the advancements and wide spread of **visual generative models**, ID docume
 ---
 
 
-## 	5️⃣ Fantasy ID Dataset Examples
+### Examples
 
 
 
-### 🟩 `original`
+#### 🟩 `original`
 Original digital Fantasy ID card designs (before printing/scanning).
 
 |Chinese | Portugal | Turkiye |
 |----------|----------|----------|
-| <img src="original/chinese-NF-1042.png" height="150px"/> | <img src="original/portugal-066_03.png" height="150px"/> | <img src="original/turkiye-NF-1054.png" height="150px"/> |
+| <img src="imgs/original/chinese-NF-1042.png" height="150px"/> | <img src="imgs/original/portugal-066_03.png" height="150px"/> | <img src="imgs/original/turkiye-NF-1054.png" height="150px"/> |
 
 
 ---
 
-### 🟦 `bonafide` 
+#### 🟦 `bonafide` 
 
 Captured from printed ID cards using different devices.
 
-#### 📱 iPhone 15 Pro
+##### 📱 iPhone 15 Pro
 
 |Chinese | Portugal | Turkiye |
 |----------|----------|----------|
-| <img src="bonafide\iphone15pro\chinese-NF-1042.jpg" height="150px"/> | <img src="bonafide\iphone15pro\portugal-066_03.jpg" height="150px"/> | <img src="bonafide\iphone15pro\turkiye-NF-1054.jpg" height="150px"/> |
+| <img src="imgs/bonafide\iphone15pro\chinese-NF-1042.jpg" height="150px"/> | <img src="imgs/bonafide\iphone15pro\portugal-066_03.jpg" height="150px"/> | <img src="imgs/bonafide\iphone15pro\turkiye-NF-1054.jpg" height="150px"/> |
 
 
-#### 📱 Huawei Mate 30
-
-|Chinese | Portugal | Turkiye |
-|----------|----------|----------|
-| <img src="bonafide\huawei\chinese-NF-1042.jpg" height="150px"/> | <img src="bonafide\huawei\portugal-066_03.jpg" height="150px"/> | <img src="bonafide\huawei\turkiye-NF-1054.jpg" height="150px"/> |
-
-#### 🖨️ Kyocera TASKalfa 2554ci
+##### 📱 Huawei Mate 30
 
 |Chinese | Portugal | Turkiye |
 |----------|----------|----------|
-| <img src="bonafide\scan\chinese-NF-1042.jpg" height="150px"/> | <img src="bonafide\scan\portugal-066_03.jpg" height="150px"/> | <img src="bonafide\scan\turkiye-NF-1054.jpg" height="150px"/> |
+| <img src="imgs/bonafide\huawei\chinese-NF-1042.jpg" height="150px"/> | <img src="imgs/bonafide\huawei\portugal-066_03.jpg" height="150px"/> | <img src="imgs/bonafide\huawei\turkiye-NF-1054.jpg" height="150px"/> |
+
+##### 🖨️ Kyocera TASKalfa 2554ci
+
+|Chinese | Portugal | Turkiye |
+|----------|----------|----------|
+| <img src="imgs/bonafide\scan\chinese-NF-1042.jpg" height="150px"/> | <img src="imgs/bonafide\scan\portugal-066_03.jpg" height="150px"/> | <img src="imgs/bonafide\scan\turkiye-NF-1054.jpg" height="150px"/> |
 
 ---
 
-### 🟥 `attack` (Digital Manipulations)
+#### 🟥 `attack` (Digital Manipulations)
 
 Manipulations include face-swapping and text inpainting.
 
 ---
-#### 🔺 Digital Manipulations-1
+##### 🔺 Digital Manipulations-1
 
-##### 📱 iPhone 15 Pro
-
-|Chinese | Portugal | Turkiye |
-|----------|----------|----------|
-| <img src="attack\Digital Manipulations-1\iphone15pro_red\chinese-NF-1042.jpg" height="150px"/> | <img src="attack\Digital Manipulations-1\iphone15pro_red\portugal-066_03.jpg" height="150px"/> | <img src="attack\Digital Manipulations-1\iphone15pro_red\turkiye-NF-1054.jpg" height="150px"/> |
-
-
-##### 📱 Huawei Mate 30
+###### 📱 iPhone 15 Pro
 
 |Chinese | Portugal | Turkiye |
 |----------|----------|----------|
-| <img src="attack\Digital Manipulations-1\huawei_red\chinese-NF-1042.jpg" height="150px"/> | <img src="attack\Digital Manipulations-1\huawei_red\portugal-066_03.jpg" height="150px"/> | <img src="attack\Digital Manipulations-1\huawei_red\turkiye-NF-1054.jpg" height="150px"/> |
+| <img src="imgs/attack\Digital Manipulations-1\iphone15pro_red\chinese-NF-1042.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-1\iphone15pro_red\portugal-066_03.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-1\iphone15pro_red\turkiye-NF-1054.jpg" height="150px"/> |
 
 
-##### 🖨️ Kyocera TASKalfa 2554ci
+###### 📱 Huawei Mate 30
 
 |Chinese | Portugal | Turkiye |
 |----------|----------|----------|
-| <img src="attack\Digital Manipulations-1\scan_red\chinese-NF-1042.jpg" height="150px"/> | <img src="attack\Digital Manipulations-1\scan_red\portugal-066_03.jpg" height="150px"/> | <img src="attack\Digital Manipulations-1\scan_red\turkiye-NF-1054.jpg" height="150px"/> |
+| <img src="imgs/attack\Digital Manipulations-1\huawei_red\chinese-NF-1042.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-1\huawei_red\portugal-066_03.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-1\huawei_red\turkiye-NF-1054.jpg" height="150px"/> |
+
+
+###### 🖨️ Kyocera TASKalfa 2554ci
+
+|Chinese | Portugal | Turkiye |
+|----------|----------|----------|
+| <img src="imgs/attack\Digital Manipulations-1\scan_red\chinese-NF-1042.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-1\scan_red\portugal-066_03.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-1\scan_red\turkiye-NF-1054.jpg" height="150px"/> |
 
 ---
-#### 🔺 Digital Manipulations-2
+##### 🔺 Digital Manipulations-2
 
-##### 📱 iPhone 15 Pro
-
-|Chinese | Portugal | Turkiye |
-|----------|----------|----------|
-| <img src="attack\Digital Manipulations-2\iphone15pro_red\chinese-NF-1042.jpg" height="150px"/> | <img src="attack\Digital Manipulations-2\iphone15pro_red\portugal-066_03.jpg" height="150px"/> | <img src="attack\Digital Manipulations-2\iphone15pro_red\turkiye-NF-1054.jpg" height="150px"/> |
-
-
-##### 📱 Huawei Mate 30
+###### 📱 iPhone 15 Pro
 
 |Chinese | Portugal | Turkiye |
 |----------|----------|----------|
-| <img src="attack\Digital Manipulations-2\huawei_red\chinese-NF-1042.jpg" height="150px"/> | <img src="attack\Digital Manipulations-2\huawei_red\portugal-066_03.jpg" height="150px"/> | <img src="attack\Digital Manipulations-2\huawei_red\turkiye-NF-1054.jpg" height="150px"/> |
+| <img src="imgs/attack\Digital Manipulations-2\iphone15pro_red\chinese-NF-1042.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-2\iphone15pro_red\portugal-066_03.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-2\iphone15pro_red\turkiye-NF-1054.jpg" height="150px"/> |
 
 
-##### 🖨️ Kyocera TASKalfa 2554ci
+###### 📱 Huawei Mate 30
 
 |Chinese | Portugal | Turkiye |
 |----------|----------|----------|
-| <img src="attack\Digital Manipulations-2\scan_red\chinese-NF-1042.jpg" height="150px"/> | <img src="attack\Digital Manipulations-2\scan_red\portugal-066_03.jpg" height="150px"/> | <img src="attack\Digital Manipulations-2\scan_red\turkiye-NF-1054.jpg" height="150px"/> |
+| <img src="imgs/attack\Digital Manipulations-2\huawei_red\chinese-NF-1042.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-2\huawei_red\portugal-066_03.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-2\huawei_red\turkiye-NF-1054.jpg" height="150px"/> |
+
+
+###### 🖨️ Kyocera TASKalfa 2554ci
+
+|Chinese | Portugal | Turkiye |
+|----------|----------|----------|
+| <img src="imgs/attack\Digital Manipulations-2\scan_red\chinese-NF-1042.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-2\scan_red\portugal-066_03.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-2\scan_red\turkiye-NF-1054.jpg" height="150px"/> |
 
 ---
 
