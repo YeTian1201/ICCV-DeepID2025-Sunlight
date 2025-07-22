@@ -1,7 +1,7 @@
 # DeepID: Digital Manipulation Detection in ID Documents
 
 <p align='center'>  
-  <img src='imgs/title.jpg' />
+  <img src='imgs/title2.jpg' />
 </p>
 
 Both Tracks’ 1st Place Solution for [**The Challenge of Detecting Synthetic Manipulations in ID Documents (Detection  Track & Localization Track)**](https://deepid-iccv.github.io/) by **"Sunlight"** team.
