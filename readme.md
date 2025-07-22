@@ -10,12 +10,12 @@ Both Tracks’ 1st Place Solution for [**The Challenge of Detecting Synthetic Ma
 
 - [Overview](#Overview)
   - [Motivation](#Motivation)
-  - [CompetitionDetails](#CompetitionDetails)
+  - [Competition Details](#competition-details)
 - [Dataset](#dataset)
   - [TrainSets](#TrainSets)
   - [TestSets](#TestSets)
   - [Examples](#Examples)
-- [Training](#training)
+- [Our Solution](#our-solution)
 - [Acknowledgement](#acknowledgement)
   
 ## Overview 
@@ -27,12 +27,16 @@ With the advancements and wide spread of **visual generative models**, ID docume
 - ✅ **Detecting full or partial text inpainted** inside a textual fields of an ID documents, such as, names and dates, using diffusion-based or other generative techniques.
 - ✅ **Performing automated visual forensics:**  binary classification and localization of forgeries in tampered ID documents.
 - ✅ **Considering practical deployment** with hardware and software limitations in memory and computational resources for ID forgery detection systems.
+###  Organizers
+
+- [**Idiap Research Institute**](https://www.idiap.ch/en/) 
+- [**PXL Vision**](https://www.pxl-vision.com/) 
 
 ---
 
-### CompetitionDetails
+### Competition Details
 
-#### 🔹 Track 1: Binary classification ( fide vs. forged).
+#### 🔹 Track 1: Binary classification ( bonafide vs. forged).
 
 - **Input**: A single ID card image  
 - **Output**: A score between 0 and 1  
@@ -118,9 +122,9 @@ f1 = 2 * precision * recall / (precision + recall + 1e-8)
 #### 🟩 `original`
 Original digital Fantasy ID card designs (before printing/scanning).
 
-|Chinese | Portugal | Turkiye |
+|Portugal |Turkiye  | Chinese |
 |----------|----------|----------|
-| <img src="imgs/original/chinese-NF-1042.png" height="150px"/> | <img src="imgs/original/portugal-066_03.png" height="150px"/> | <img src="imgs/original/turkiye-NF-1054.png" height="150px"/> |
+ | <img src="imgs/original/portugal-066_03.png" height="150px"/> | <img src="imgs/original/turkiye-NF-1054.png" height="150px"/> | <img src="imgs/original/chinese-NF-1042.png" height="150px"/>|
 
 
 ---
@@ -131,22 +135,22 @@ Captured from printed ID cards using different devices.
 
 ##### iPhone 15 Pro
 
-|Chinese | Portugal | Turkiye |
+|Portugal |Turkiye  | Chinese |
 |----------|----------|----------|
-| <img src="imgs/bonafide\iphone15pro\chinese-NF-1042.jpg" height="150px"/> | <img src="imgs/bonafide\iphone15pro\portugal-066_03.jpg" height="150px"/> | <img src="imgs/bonafide\iphone15pro\turkiye-NF-1054.jpg" height="150px"/> |
+ | <img src="imgs/bonafide\iphone15pro\portugal-066_03.jpg" height="150px"/> | <img src="imgs/bonafide\iphone15pro\turkiye-NF-1054.jpg" height="150px"/> | <img src="imgs/bonafide\iphone15pro\chinese-NF-1042.jpg" height="150px"/>|
 
 
 ##### Huawei Mate 30
 
-|Chinese | Portugal | Turkiye |
+|Portugal |Turkiye  | Chinese |
 |----------|----------|----------|
-| <img src="imgs/bonafide\huawei\chinese-NF-1042.jpg" height="150px"/> | <img src="imgs/bonafide\huawei\portugal-066_03.jpg" height="150px"/> | <img src="imgs/bonafide\huawei\turkiye-NF-1054.jpg" height="150px"/> |
+| <img src="imgs/bonafide\huawei\portugal-066_03.jpg" height="150px"/> | <img src="imgs/bonafide\huawei\turkiye-NF-1054.jpg" height="150px"/> | <img src="imgs/bonafide\huawei\chinese-NF-1042.jpg" height="150px"/> |
 
 ##### Kyocera TASKalfa 2554ci
 
-|Chinese | Portugal | Turkiye |
+|Portugal |Turkiye  | Chinese |
 |----------|----------|----------|
-| <img src="imgs/bonafide\scan\chinese-NF-1042.jpg" height="150px"/> | <img src="imgs/bonafide\scan\portugal-066_03.jpg" height="150px"/> | <img src="imgs/bonafide\scan\turkiye-NF-1054.jpg" height="150px"/> |
+| <img src="imgs/bonafide\scan\portugal-066_03.jpg" height="150px"/> | <img src="imgs/bonafide\scan\turkiye-NF-1054.jpg" height="150px"/>| <img src="imgs/bonafide\scan\chinese-NF-1042.jpg" height="150px"/>  |
 
 ---
 
@@ -159,49 +163,52 @@ Manipulations include face-swapping and text inpainting.
 
 ######  iPhone 15 Pro
 
-|Chinese | Portugal | Turkiye |
+|Portugal |Turkiye  | Chinese |
 |----------|----------|----------|
-| <img src="imgs/attack\Digital Manipulations-1\iphone15pro_red\chinese-NF-1042.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-1\iphone15pro_red\portugal-066_03.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-1\iphone15pro_red\turkiye-NF-1054.jpg" height="150px"/> |
+| <img src="imgs/attack\Digital Manipulations-1\iphone15pro_red\portugal-066_03.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-1\iphone15pro_red\turkiye-NF-1054.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-1\iphone15pro_red\chinese-NF-1042.jpg" height="150px"/> |
 
 
 ######  Huawei Mate 30
 
-|Chinese | Portugal | Turkiye |
+|Portugal |Turkiye  | Chinese |
 |----------|----------|----------|
-| <img src="imgs/attack\Digital Manipulations-1\huawei_red\chinese-NF-1042.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-1\huawei_red\portugal-066_03.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-1\huawei_red\turkiye-NF-1054.jpg" height="150px"/> |
+ | <img src="imgs/attack\Digital Manipulations-1\huawei_red\portugal-066_03.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-1\huawei_red\turkiye-NF-1054.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-1\huawei_red\chinese-NF-1042.jpg" height="150px"/>|
 
 
 ######  Kyocera TASKalfa 2554ci
 
-|Chinese | Portugal | Turkiye |
+|Portugal |Turkiye  | Chinese |
 |----------|----------|----------|
-| <img src="imgs/attack\Digital Manipulations-1\scan_red\chinese-NF-1042.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-1\scan_red\portugal-066_03.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-1\scan_red\turkiye-NF-1054.jpg" height="150px"/> |
+ | <img src="imgs/attack\Digital Manipulations-1\scan_red\portugal-066_03.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-1\scan_red\turkiye-NF-1054.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-1\scan_red\chinese-NF-1042.jpg" height="150px"/>|
 
 ---
 #####  Digital Manipulations-2
 
 ######  iPhone 15 Pro
 
-|Chinese | Portugal | Turkiye |
+|Portugal |Turkiye  | Chinese |
 |----------|----------|----------|
-| <img src="imgs/attack\Digital Manipulations-2\iphone15pro_red\chinese-NF-1042.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-2\iphone15pro_red\portugal-066_03.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-2\iphone15pro_red\turkiye-NF-1054.jpg" height="150px"/> |
+| <img src="imgs/attack\Digital Manipulations-2\iphone15pro_red\portugal-066_03.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-2\iphone15pro_red\turkiye-NF-1054.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-2\iphone15pro_red\chinese-NF-1042.jpg" height="150px"/> |
 
 
 ######  Huawei Mate 30
 
-|Chinese | Portugal | Turkiye |
+|Portugal |Turkiye  | Chinese |
 |----------|----------|----------|
-| <img src="imgs/attack\Digital Manipulations-2\huawei_red\chinese-NF-1042.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-2\huawei_red\portugal-066_03.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-2\huawei_red\turkiye-NF-1054.jpg" height="150px"/> |
+ | <img src="imgs/attack\Digital Manipulations-2\huawei_red\portugal-066_03.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-2\huawei_red\turkiye-NF-1054.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-2\huawei_red\chinese-NF-1042.jpg" height="150px"/>|
 
 
 ######  Kyocera TASKalfa 2554ci
 
-|Chinese | Portugal | Turkiye |
+|Portugal |Turkiye  | Chinese |
 |----------|----------|----------|
-| <img src="imgs/attack\Digital Manipulations-2\scan_red\chinese-NF-1042.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-2\scan_red\portugal-066_03.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-2\scan_red\turkiye-NF-1054.jpg" height="150px"/> |
+ | <img src="imgs/attack\Digital Manipulations-2\scan_red\portugal-066_03.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-2\scan_red\turkiye-NF-1054.jpg" height="150px"/> | <img src="imgs/attack\Digital Manipulations-2\scan_red\chinese-NF-1042.jpg" height="150px"/>|
 
 ---
 
+## Our Solution
+
+## Acknowledgement
 
 
 
