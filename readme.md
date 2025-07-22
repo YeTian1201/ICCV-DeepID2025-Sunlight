@@ -3,7 +3,8 @@
 <p align='center'>  
   <img src='imgs/title.jpg' />
 </p>
-1st place solution for [The Challenge of Detecting Synthetic Manipulations in ID Documents( Classification Track & Localization Track )](https://deepid-iccv.github.io/) by "Sunlight" team.
+
+1st place solution for [**The Challenge of Detecting Synthetic Manipulations in ID Documents (Classification Track & Localization Track)**](https://deepid-iccv.github.io/) by **"Sunlight" team**.
 
 ## Table of Contents
 
