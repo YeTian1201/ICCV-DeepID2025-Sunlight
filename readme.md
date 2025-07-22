@@ -32,7 +32,7 @@ With the advancements and wide spread of **visual generative models**, ID docume
 
 ### CompetitionDetails
 
-#### 🔹 Track 1: Binary classification (bonafide vs. forged).
+#### 🔹 Track 1: Binary classification ( fide vs. forged).
 
 - **Input**: A single ID card image  
 - **Output**: A score between 0 and 1  
@@ -80,7 +80,7 @@ f1 = 2 * precision * recall / (precision + recall + 1e-8)
 ### TrainSets
 
 - **262 fantasy ID templates**, designed to mimic real ID documents of 10 countries  
-- **786 bona fide images** captured using:
+- **786 bonafide images** captured using:
   - iPhone 15 Pro  
   - Huawei Mate 30  
   - Kyocera TASKalfa 2554ci scanner  
@@ -217,5 +217,5 @@ $$
 
 Where:
 
-- `F1_fantasy` = average of F1 on bona fide and attack samples from the Fantasy test set  
+- `F1_fantasy` = average of F1 on bonafide and attack samples from the Fantasy test set  
 - `F1_private` = F1-score on the private real document test set   -->
